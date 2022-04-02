@@ -201,11 +201,14 @@
                 border: none;
                 background: none;
                 padding: 10px 0;
+                flex: 1 0 auto;
+                align-items: flex-start;
             }
 
             &_download {
                 max-width: 350px;
                 width: 100%;
+                padding-top: 0;
             }
         }
         
