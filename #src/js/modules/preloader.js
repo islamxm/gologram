@@ -1,7 +1,7 @@
 export const preloader = () => {
     const el = document.querySelector('.preloader');
 
-    window.addEventListener('load', () => {
+    if(el) {
         el.classList.add('hide');
-    })
+    }
 }
