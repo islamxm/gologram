@@ -5,12 +5,10 @@ import { preloader } from './modules/preloader.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    window.addEventListener('load', () => {
-        flsFuncs.isWebp();
+    flsFuncs.isWebp();
 
         preloader();
         authSlider();
-    })
     
     
 })

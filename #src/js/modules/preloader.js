@@ -2,6 +2,10 @@ export const preloader = () => {
     const el = document.querySelector('.preloader');
 
     if(el) {
-        el.classList.add('hide');
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                el.classList.add('hide');
+            }, 3000);
+        })
     }
 }
