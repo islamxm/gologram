@@ -1,0 +1,13 @@
+:root {
+    --bg: #E5E5E5;
+    --gray1: #AFAFAF;
+    --gray2: #F7F7F7;
+    --gray3: #656565;
+
+    --blue1: #024EE2;
+}
+
+@mixin def-anim {
+    transition: all .3s ease;
+}
+

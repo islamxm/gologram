@@ -1,0 +1,83 @@
+.input {
+    
+}
+
+.input.input-label-within-block {
+    position: relative;
+    display: flex;
+
+    input {
+        border-radius: 6px 0 0 6px;
+        padding: 15px 12px 5px 12px;
+        background-color: var(--gray2);
+        display: block;
+        flex: 1 0 auto;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: normal;
+        border: 0.5px solid transparent;
+        @include def-anim;
+        border-right: none;
+
+        &:focus {
+            border-color: var(--gray3);
+
+            
+        }
+    }
+
+    input:focus ~ .ex {
+        border-color: var(--gray3); 
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 12px;
+        padding-top: 2px;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: normal;
+        color: var(--gray1);
+    }
+
+    .ex {
+        background-color: var(--gray2);
+        border-radius: 0 6px 6px 0;
+        padding-right: 10px;
+        padding-top: 8px;
+        border: 0.5px solid transparent;
+        border-left: none;
+        display: flex;
+        align-items: center;
+        @include def-anim;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5px;
+        }
+
+        &__item.ex__item-check {
+
+        }
+
+        &__item.ex__item-repeat {
+
+        }
+
+        &__item.ex__item-link {
+            color: var(--blue1);
+            font-size: 12px;
+        }
+        &__item.ex__item-show {
+            font-size: 12px;
+            color: #000;
+        }
+    }
+
+}
