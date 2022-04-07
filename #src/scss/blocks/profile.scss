@@ -1,0 +1,157 @@
+.profile {
+    max-width: 1090px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+
+    &__card {
+        padding: 40px 0;
+        display: flex;
+        align-items: flex-start;
+        width: 80%;
+        margin: 0 auto;
+        
+
+        &_img {
+            width: 148px;
+            height: 148px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-right: 5%;
+            flex: 0 0 auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &_body {
+            // border: 1px solid red;
+            flex: 1 0 auto;
+
+            &_head {
+                margin-bottom: 12px;
+
+                display: flex;
+                align-items: center;
+
+
+                &_item {
+                    margin-right: 5%;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                .nickname {
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 28px;
+                }
+
+                button {
+                    cursor: pointer;
+                    white-space: nowrap;
+                }
+
+                .button_default.button--edit {
+                    padding: 7px 40px;
+                    font-size: 18px;
+                    line-height: 21px;
+                    border: 1px solid #1D2266;
+                    border-radius: 5px;
+                }
+
+                .button--settings {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+
+            }
+
+            &_main-info {
+                margin-bottom: 10px;
+                .info-primary {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                .info-secondary {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+
+            &_ex-info {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 10px;
+
+                a {
+                    color: #024EE2;
+                    text-decoration: underline;
+                }
+            }
+
+            &_status {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 10px;
+
+                button {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 28px;
+                    border-radius: 14px;
+                    padding: 6px 12px;
+                }
+
+                button.disabled {
+                    pointer-events: none;
+                    background: #EFEFEF;
+                    color: #AFAFAF;
+                }
+            }
+
+            &_values {
+                padding-top: 10px;
+                display: flex;
+                align-items: center;
+
+                .value {
+                    display: flex;
+                    margin-right: 10%;
+
+                    &__item {   
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 28px;
+                        margin-right: 6px;
+                    }
+
+                    &__name {
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__storemenu {
+        margin-bottom: 30px;
+        padding: 0 4%;
+    }
+
+    &__cnt {
+
+    }
+}
