@@ -1381,7 +1381,7 @@ body {
   height: 100% !important;
 }
 .post-item__img {
-  width: auto;
+  width: 55%;
 }
 .post-item__img img {
   display: flex;
