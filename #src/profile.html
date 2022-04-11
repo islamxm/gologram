@@ -4,7 +4,7 @@
     @@include('./html/head.html')
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="profile">
         <!-- profile-header -->
         <div class="container">
             <!-- profile-header -->
@@ -13,6 +13,9 @@
         <!-- profile-header -->
         <main class="main">
             <div class="profile">
+                <!-- profile mobile header -->
+                @@include('./html/profile-self-header.html')
+                <!-- profile mobile header -->
                 <div class="profile__card profile__card-self">
                     <div class="profile__card_img">
                         <picture>
@@ -679,6 +682,9 @@
         
     </div>
     
+
+    <!-- profile menu -->
+    @@include('./html/profile-menu.html')
     
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"

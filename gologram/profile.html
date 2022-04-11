@@ -11,7 +11,7 @@
 </head>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="profile">
         <!-- profile-header -->
         <div class="container">
             <!-- profile-header -->
@@ -64,6 +64,32 @@
         <!-- profile-header -->
         <main class="main">
             <div class="profile">
+                <!-- profile mobile header -->
+                <div class="profile-self-header">
+    <div class="container">
+        <div class="profile-self-header__in">
+            <div class="profile-self-header__main">
+                <div class="profile-self-header__main_nick">nickname</div>
+                <div class="profile-self-header__main_notification">8</div>
+            </div>
+            <div class="profile-self-header__action">
+                <div class="profile-self-header__action_add">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21ZM11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" fill="black"/>
+                        <path d="M17 10.0857H11.9143V5H10.0857V10.0857H5V11.9143H10.0857V17H11.9143V11.9143H17V10.0857Z" fill="black"/>
+                        </svg>
+                        
+                </div>
+                <div class="profile-self-header__action_burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- profile mobile header -->
                 <div class="profile__card profile__card-self">
                     <div class="profile__card_img">
                         <picture>
@@ -952,6 +978,24 @@
         
     </div>
     
+
+    <!-- profile menu -->
+    <div class="profile-menu">
+    <div class="profile-menu__in">
+        <div class="profile-menu__drag">
+            <button class="profile-menu__drag_el"></button>
+        </div>
+        <ul class="profile-menu__list">
+            <li class="profile-menu__list_item profile-menu__list_item--settings">Настройки</li>
+            <li class="profile-menu__list_item profile-menu__list_item--archive">Архив</li>
+            <li class="profile-menu__list_item profile-menu__list_item--history">Ваши действия</li>
+            <li class="profile-menu__list_item profile-menu__list_item--qr">QR-код</li>
+            <li class="profile-menu__list_item profile-menu__list_item--saved">Сохраненное</li>
+            <li class="profile-menu__list_item profile-menu__list_item--friends">Близкие друзья</li>
+            <li class="profile-menu__list_item profile-menu__list_item--covid">Центр информации о COVID-19</li>
+        </ul>
+    </div>
+</div>
     
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"

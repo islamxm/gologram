@@ -166,7 +166,8 @@
                     &_body {    
                         flex: 1 0 auto;
                         padding: 0 12px;
-                        max-width: 80%;
+                        max-width: 100%;
+
                         &_main {
                             margin-bottom: 15px;
                             &-nick {
@@ -336,6 +337,13 @@
 }
 
 
+
+@media (max-width: 1180px) {
+
+    .post-item {
+        display: none !important;
+    }
+}
 
 
 
