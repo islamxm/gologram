@@ -89,3 +89,39 @@
         }
     }
 }
+
+
+@media (max-width: 550px) {
+
+    .stm {
+
+        &__list {
+
+            &_item {
+                justify-content: center;
+                
+                &_in {
+                    .store-item {
+                        width: 53px;
+                        height: 53px;
+
+                        .action-wrap {
+                            width: 52px;
+                            height: 52px;
+
+                            .action {
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                    }
+
+                    .name {
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

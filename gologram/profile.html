@@ -44,7 +44,7 @@
             </li>
             <li class="profile-header__action_item profile-header__action_item--global">
                 <a href="#">
-                    <img src="./img/icons/nav-global.svg" alt="">
+                    <img src="./img/icons/nav-global.png" alt="">
                 </a>
             </li>
             <li class="profile-header__action_item profile-header__action_item--fav">
@@ -64,7 +64,7 @@
         <!-- profile-header -->
         <main class="main">
             <div class="profile">
-                <!-- profile mobile header -->
+
                 <div class="profile-self-header">
     <div class="container">
         <div class="profile-self-header__in">
@@ -89,8 +89,9 @@
         </div>
     </div>
 </div>
-                <!-- profile mobile header -->
+
                 <div class="profile__card profile__card-self">
+                    
                     <div class="profile__card_img">
                         <picture>
                             <source srcset="" type="image/webp">
@@ -133,6 +134,45 @@
                                 <div class="value__name">подписки</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                
+                <div class="profile__card-mobile">
+                    <div class="profile__card-mobile_main">
+                        <div class="profile__card-mobile_main_img">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/profile/avatar.png" alt="">
+                            </picture>
+                            <button class="profile__card-mobile_main_img_btn"></button>
+                        </div>
+                        <div class="profile__card-mobile_main_body">
+                            <div class="profile__card-mobile_main_body_descr">
+                                Визажист <br>
+                                Стаж 10 лет
+                            </div>
+                            <div class="profile__card-mobile_main_body_ex">
+                                <a href="#">freemind.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__card-mobile_values">
+                        <div class="profile__card-mobile_values_item">
+                            <div class="value">153</div>
+                            <div class="name">Публикации</div>
+                        </div>
+                        <div class="profile__card-mobile_values_item">
+                            <div class="value">1450</div>
+                            <div class="name">Подписчиков</div>
+                        </div>
+                        <div class="profile__card-mobile_values_item">
+                            <div class="value">208</div>
+                            <div class="name">Подписки</div>
+                        </div>
+                    </div>
+                    <div class="profile__card-mobile_action">
+                        <button>Редактировать профиль</button>
                     </div>
                 </div>
                 <div class="profile__storemenu">
@@ -318,19 +358,34 @@
                     <div class="cnt">
     <div class="cnt__tabs">
         <div class="cnt__tabs_item tab--posts active">
-            Публикации
+            <div class="icon">
+                <img src="../img/icons/tab-posts.svg" alt="">   
+            </div> 
+            <div class="text">Публикации</div>
         </div>
         <div class="cnt__tabs_item tab--reels">
-            REELS
+            <div class="icon">
+                <img src="../img/icons/tab-reels.svg" alt="">
+            </div>
+            <div class="text">REELS</div>
         </div>
         <div class="cnt__tabs_item tab--video">
-            ВИДЕО
+            <div class="icon">
+                <img src="../img/icons/tab-video.svg" alt="">
+            </div>
+            <div class="text">ВИДЕО</div>
         </div>
         <div class="cnt__tabs_item tab--saved">
-            СОХРАНЕННОЕ
+            <div class="icon">
+                <img src="../img/icons/tab-saved.svg" alt="">
+            </div>
+            <div class="text">СОХРАНЕННОЕ</div>
         </div>
         <div class="cnt__tabs_item tab--mark">
-            ОТМЕТКИ
+            <div class="icon">
+                <img src="../img/icons/tab-mark.svg" alt="">
+            </div>
+            <div class="text">ОТМЕТКИ</div>
         </div>
     </div>
     <div class="cnt__body">
@@ -996,6 +1051,49 @@
             <li class="profile-menu__list_item profile-menu__list_item--covid">Центр информации о COVID-19</li>
         </ul>
     </div>
+</div>
+
+    <!-- profile create -->
+    <div class="create-menu">
+    <div class="create-menu__layer"></div>
+    <div class="create-menu__in">
+        <div class="create-menu__drag">
+            <button class="create-menu__drag_el"></button>
+        </div>
+        <div class="create-menu__head">
+            Создать
+        </div>
+        <ul class="create-menu__list">
+            <li class="create-menu__list_item create-menu__list_item--publication">Публикация</li>
+            <li class="create-menu__list_item create-menu__list_item--reels">Видео Reels</li>
+            <li class="create-menu__list_item create-menu__list_item--history">Истории</li>
+            <li class="create-menu__list_item create-menu__list_item--actual">Актуальное из истории</li>
+            <li class="create-menu__list_item create-menu__list_item--way">Путеводитель</li>
+        </ul>
+    </div>
+</div>
+
+    <!-- profile mobnav -->
+    <div class="mobnav">
+    <ul class="mobnav__list">
+        <li class="mobnav__list_item mobnav__list_item--home"><a href="#">
+            <img src="./img/icons/mobnav-1.svg" alt="">
+        </a></li>
+        <li class="mobnav__list_item mobnav__list_item--search"><a href="#">
+            <img src="./img/icons/mobnav-2.svg" alt="">
+        </a></li>
+        <li class="mobnav__list_item mobnav__list_item--reels"><a href="#">
+            <img src="./img/icons/mobnav-3.svg" alt="">
+        </a></li>
+        <li class="mobnav__list_item mobnav__list_item--fav"><a href="#">
+            <img src="./img/icons/mobnav-4.svg" alt="">
+        </a></li>
+        <li class="mobnav__list_item mobnav__list_item--profile">
+            <div class="mobnav__list_item--profile_not"></div>
+            <a href="#">
+            <img src="./img/profile/avatar.png" alt="">
+        </a></li>
+    </ul>
 </div>
     
     <script

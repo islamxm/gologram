@@ -13,10 +13,11 @@
         <!-- profile-header -->
         <main class="main">
             <div class="profile">
-                <!-- profile mobile header -->
+
                 @@include('./html/profile-self-header.html')
-                <!-- profile mobile header -->
+
                 <div class="profile__card profile__card-self">
+                    
                     <div class="profile__card_img">
                         <picture>
                             <source srcset="" type="image/webp">
@@ -59,6 +60,45 @@
                                 <div class="value__name">подписки</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                
+                <div class="profile__card-mobile">
+                    <div class="profile__card-mobile_main">
+                        <div class="profile__card-mobile_main_img">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/profile/avatar.png" alt="">
+                            </picture>
+                            <button class="profile__card-mobile_main_img_btn"></button>
+                        </div>
+                        <div class="profile__card-mobile_main_body">
+                            <div class="profile__card-mobile_main_body_descr">
+                                Визажист <br>
+                                Стаж 10 лет
+                            </div>
+                            <div class="profile__card-mobile_main_body_ex">
+                                <a href="#">freemind.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__card-mobile_values">
+                        <div class="profile__card-mobile_values_item">
+                            <div class="value">153</div>
+                            <div class="name">Публикации</div>
+                        </div>
+                        <div class="profile__card-mobile_values_item">
+                            <div class="value">1450</div>
+                            <div class="name">Подписчиков</div>
+                        </div>
+                        <div class="profile__card-mobile_values_item">
+                            <div class="value">208</div>
+                            <div class="name">Подписки</div>
+                        </div>
+                    </div>
+                    <div class="profile__card-mobile_action">
+                        <button>Редактировать профиль</button>
                     </div>
                 </div>
                 <div class="profile__storemenu">
@@ -685,6 +725,12 @@
 
     <!-- profile menu -->
     @@include('./html/profile-menu.html')
+
+    <!-- profile create -->
+    @@include('./html/create-menu.html')
+
+    <!-- profile mobnav -->
+    @@include('./html/mobnav.html')
     
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"

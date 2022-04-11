@@ -1,16 +1,16 @@
-.profile-menu.active {
+.create-menu.active {
     z-index: 1000;
 
-    
-    .profile-menu__layer {
+    .create-menu__layer {
         opacity: 1;
     }
-    .profile-menu__in {
+
+    .create-menu__in {
         transform: translateY(0);
     }
 }
 
-.profile-menu {
+.create-menu {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -39,13 +39,15 @@
         padding-bottom: 10vh;
         transform: translateY(100%);
         transition: all .5s cubic-bezier(.3,.54,.27,.99);
+        overflow: hidden;
     }
 
     &__drag {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 13px 0 25px;
+        padding: 13px 0 13px;
+        background: #F7F7F7;
 
         &_el {
             height: 4px;
@@ -54,8 +56,21 @@
             border-radius: 2px;
         }
     }
+
+    &__head {
+        text-align: center;
+        padding: 0 0 13px 0;
+        font-weight: 700;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FF9E10;
+        background: #F7F7F7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    }
+
     &__list {
         padding-left: 15px;
+        padding-top: 15px;
 
         &_item {
             padding: 6px 15px 6px 40px;
@@ -72,9 +87,10 @@
                 background-color: #E5E5E5;
                 content: '';
             }
-            &::after {
+
+            &:after {
                 position: absolute;
-                top: calc(50% - (20px / 2));
+                top: calc(50% - (25px / 2));
                 left: 0;
                 width: 25px;
                 height: 25px;
@@ -84,53 +100,34 @@
             }
         }
 
-        &_item.profile-menu__list_item--settings {
+        &_item.create-menu__list_item--publication {
             &:after {
-                content: url('../img/icons/btn-settings.png');
+                content: url('../img/icons/btn-publication.svg');
+            }
+        }   
+
+        &_item.create-menu__list_item--reels {
+            &:after {
+                content: url('../img/icons/btn-reels.svg');
             }
         }
 
-        &_item.profile-menu__list_item--archive {
+        &_item.create-menu__list_item--history {
             &:after {
-                content: url('../img/icons/btn-archive.png');
+                content: url('../img/icons/btn-hist.png');
             }
         }
 
-        &_item.profile-menu__list_item--history {
+        &_item.create-menu__list_item--actual {
             &:after {
-                content: url('../img/icons/btn-history.png');
+                content: url('../img/icons/btn-actual.png');
             }
         }
 
-        &_item.profile-menu__list_item--qr {
+        &_item.create-menu__list_item--way {
             &:after {
-                content: url('../img/icons/btn-qr.png');
-            }
-        }
-
-        &_item.profile-menu__list_item--saved {
-            &:after {
-                content: url('../img/icons/save.svg');
-            }
-        }
-
-        &_item.profile-menu__list_item--friends {
-            &:after {
-                content: url('../img/icons/btn-friends.png');
-            }
-        }
-
-        &_item.profile-menu__list_item--covid {
-            &:after {
-                content: url('../img/icons/btn-covid.png');
+                content: url('../img/icons/btn-way.png');
             }
         }
     }
 }
-
-
-// @media (min-width: 850px) {
-//     .profile-menu {
-
-//     }
-// }

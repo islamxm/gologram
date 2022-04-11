@@ -5,6 +5,10 @@
     margin: 0 auto;
     background-color: #FAFAFA;
 
+
+    &__card-mobile {
+        display: none;
+    }
     &__card {
         padding: 40px 0;
         display: flex;
@@ -12,7 +16,9 @@
         width: 80%;
         margin: 0 auto;
         
-
+        &_img-mobile {
+            display: none;
+        }
         &_img {
             width: 148px;
             height: 148px;
@@ -168,6 +174,145 @@
     }
     .profile {
 
+        &__card {   
 
+            display: none;
+
+        }
+
+        &__card-mobile {
+            display: block;
+            padding: 0 15px;
+            display: flex;
+            flex-wrap: wrap;
+
+            &_main {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 25px;
+
+                &_img {
+                    width: 84px;
+                    height: 84px;
+                    border-radius: 100%;
+                    // overflow: hidden;
+                    margin-right: 23px;
+                    flex: 0 0 auto;
+                    position: relative;
+
+                    &_btn {
+                        width: 23px;
+                        height: 23px;
+                        border-radius: 100%;
+                        border: 3px solid #fff;
+                        position: absolute;
+                        bottom: 5%;
+                        right: -3%;
+                        background: linear-gradient(0deg, #1D2266, #1D2266), #1D2266;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &_body {
+                    flex: 1 0 auto;
+
+                    &_nickname {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 19px;
+                    }
+                    &_descr {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                    &_ex {
+                        a {
+                            font-size: 14px;
+                            color: #024EE2;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            &_values {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 23px;
+                flex: 1 0 auto;
+
+                &_item {
+
+                    .value {
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: 700;
+                    }
+                    .name {
+                        text-align: center;
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+            }
+
+            &_action {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+                width: 100%;
+
+                button {
+                    padding: 6px 50px;
+                    font-size: 14px;
+                    line-height: normal;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #1D2266;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .profile {
+
+
+        &__card-mobile {
+
+            &_values {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+
+    .profile {
+        padding: 0;
+        
+        &__storemenu {
+            padding: 0 2%;
+            margin-bottom: 0px;
+        }
     }
 }

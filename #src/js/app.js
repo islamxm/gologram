@@ -1,5 +1,6 @@
 import { authSlider } from './modules/authSlider.js';
 import { commentLike } from './modules/commentLike.js';
+import { createMenu } from './modules/createMenu.js';
 import * as flsFuncs from './modules/functions.js';
 import { modalScript } from './modules/modalScript.js';
 import { preloader } from './modules/preloader.js';
@@ -16,5 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     stmSlider();
     modalScript();
     commentLike();
-    profileMenu();  
+    profileMenu();
+    createMenu();  
 });
