@@ -3,11 +3,35 @@
 
 export const modalScript = () => {
 
-    $(".modal-post").iziModal({
+    function postModal() {
+        if(window.innerWidth > 1000) {
+            $(".modal-post").iziModal({
+    
+                group: 'posts',
+                loop: false
+            });
+        } else {
+            return;
+        }
 
-        group: 'posts',
-        loop: false
-    });
+        window.addEventListener('resize', () => {
+            if(window.innerWidth > 1000) {
+                $(".modal-post").iziModal({
+        
+                    group: 'posts',
+                    loop: false
+                });
+            } else {
+                return;
+            }
+        }); 
+    }
+
+    postModal();
+
+    
+
+    
 
     // $(".post-settings").iziModal({
 
