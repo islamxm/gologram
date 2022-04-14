@@ -1,0 +1,36 @@
+.comments-short {
+
+    &__in {
+
+    }
+
+    &__top {
+
+        &_btn {
+            font-size: 14px;
+            line-height: 19px;
+            color: #AFAFAF;
+            margin-bottom: 5px;
+        }
+    }
+
+
+    &__list {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &-nick {
+            font-weight: 700;
+            margin-right: 5px;
+        } 
+
+        &-text {
+            flex: 1 0 auto;
+        }
+    }
+}

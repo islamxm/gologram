@@ -1634,6 +1634,62 @@ body {
     display: none;
   }
 }
+.post-page-header {
+  border-bottom: 1px solid #EFEFEF;
+  padding: 10px 0;
+}
+.post-page-header__in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.post-page-header__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.post-page-header__main {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+}
+.post-page-header__main_nickname {
+  text-align: center;
+  color: #AFAFAF;
+  margin-bottom: 5px;
+}
+.post-page-header__main_ex {
+  text-align: center;
+}
+
+.comments-short__top_btn {
+  font-size: 14px;
+  line-height: 19px;
+  color: #AFAFAF;
+  margin-bottom: 5px;
+}
+.comments-short__list {
+  font-size: 14px;
+  line-height: 19px;
+}
+.comments-short__item {
+  display: flex;
+  align-items: center;
+}
+.comments-short__item-nick {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.comments-short__item-text {
+  flex: 1 0 auto;
+}
+
 .input.input-label-within-block {
   position: relative;
   display: flex;
@@ -2236,6 +2292,42 @@ body {
   }
   .post-item__body_action-btns_item:last-child {
     margin-left: 0;
+  }
+}
+@media (max-width: 550px) {
+  .post-item__body_head {
+    padding: 10px 15px;
+    height: auto;
+  }
+  .post-item__body_head_main .img {
+    width: 40px;
+    height: 40px;
+  }
+  .post-item__body_head_main .body__geo {
+    display: none;
+  }
+  .post-item__body_action-btns {
+    margin-bottom: 10px !important;
+  }
+  .post-item__body_action-top {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+  }
+  .post-item__body_action-bottom {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .post-item__body_action-input {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .post-item__body_content {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .post-item__body_content .post--body {
+    margin-bottom: 15px;
   }
 }
 .iziModal-navigate .iziModal-navigate-caption {

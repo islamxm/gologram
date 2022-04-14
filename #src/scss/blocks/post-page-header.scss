@@ -1,0 +1,42 @@
+.post-page-header {
+    border-bottom: 1px solid #EFEFEF;
+    padding: 10px 0;
+
+    &__in {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+    }
+
+    &__back {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: calc(50% - 10px);
+        left: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__main {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+
+        &_nickname {
+            text-align: center;
+            
+            color: #AFAFAF;
+            margin-bottom: 5px;
+        }
+
+        &_ex {
+            text-align: center;
+            
+        }
+
+    }
+}
