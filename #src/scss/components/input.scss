@@ -2,6 +2,26 @@
     
 }
 
+.input.input-label-within-block.not-valid {
+    input {
+        border-color:red !important;
+    }
+
+    .ex {
+        border-color: red !important;
+    }
+}
+
+.input.input-label-within-block.valid {
+    input {
+        border-color: green !important;
+    }
+
+    .ex {
+        border-color: green !important;
+    }
+}
+
 .input.input-label-within-block {
     position: relative;
     display: flex;

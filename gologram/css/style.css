@@ -1690,6 +1690,20 @@ body {
   flex: 1 0 auto;
 }
 
+.input.input-label-within-block.not-valid input {
+  border-color: red !important;
+}
+.input.input-label-within-block.not-valid .ex {
+  border-color: red !important;
+}
+
+.input.input-label-within-block.valid input {
+  border-color: green !important;
+}
+.input.input-label-within-block.valid .ex {
+  border-color: green !important;
+}
+
 .input.input-label-within-block {
   position: relative;
   display: flex;
@@ -1764,6 +1778,11 @@ body {
   font-size: 16px;
   cursor: pointer;
   width: 100%;
+}
+
+.button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .button.button-orange {
