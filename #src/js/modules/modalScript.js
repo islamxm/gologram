@@ -1,20 +1,12 @@
-// import iziModal from 'izimodal';
+import iziModal from 'izimodal';
 // import  {$} from 'jquery';
 
 export const modalScript = () => {
 
-    function postModal() {
-        if(window.innerWidth > 1000) {
-            $(".modal-post").iziModal({
-    
-                group: 'posts',
-                loop: false
-            });
-        } else {
-            return;
-        }
+    const els = document.querySelectorAll('.modal-post');
 
-        window.addEventListener('resize', () => {
+    if(els.length > 0) {
+        function postModal() {
             if(window.innerWidth > 1000) {
                 $(".modal-post").iziModal({
         
@@ -24,42 +16,46 @@ export const modalScript = () => {
             } else {
                 return;
             }
-        }); 
-    }
-
-    postModal();
-
     
-
+            window.addEventListener('resize', () => {
+                if(window.innerWidth > 1000) {
+                    $(".modal-post").iziModal({
+            
+                        group: 'posts',
+                        loop: false
+                    });
+                } else {
+                    return;
+                }
+            }); 
+        }
     
-
-    // $(".post-settings").iziModal({
-
-    //     // group: 'posts',
-    //     loop: false
-    // });
+        postModal();
+        
     
-
-    const setMenu = document.querySelector('.post-settings');
-    const closeBtn = document.querySelector('.postSettingsClose');
-    const triggers = document.querySelectorAll('.postSettingsOpen');
-    if(triggers.length > 0) {
-        triggers.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                setMenu.classList.add('active');
+        const setMenu = document.querySelector('.post-settings');
+        const closeBtn = document.querySelector('.postSettingsClose');
+        const triggers = document.querySelectorAll('.postSettingsOpen');
+        if(triggers.length > 0) {
+            triggers.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    setMenu.classList.add('active');
+                });
             });
-        });
-    }
-    if(closeBtn) {
-        closeBtn.addEventListener('click', () => {
-            setMenu.classList.remove('active');
-        });
-    }
-    if(setMenu) {
-        setMenu.addEventListener('click', (e) => {
-            if(e.target.classList.contains('post-settings')) {
+        }
+        if(closeBtn) {
+            closeBtn.addEventListener('click', () => {
                 setMenu.classList.remove('active');
-            }
-        });
+            });
+        }
+        if(setMenu) {
+            setMenu.addEventListener('click', (e) => {
+                if(e.target.classList.contains('post-settings')) {
+                    setMenu.classList.remove('active');
+                }
+            });
+        }
     }
+
+    
 }

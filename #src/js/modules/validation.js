@@ -8,8 +8,10 @@ export const validation = () => {
 
     //Inputs
     let inputLogin = document.querySelector('#login');
-    let inputEmail = document.querySelector('#email');
+
     let inputName = document.querySelector('#name');
+
+    let inputEmails = document.querySelectorAll('.email');
     
 
     //form button
@@ -42,7 +44,13 @@ export const validation = () => {
     }
 
     validateFunc(inputLogin, login);
-    validateFunc(inputEmail, email);
+
+    if(inputEmails.length > 0) {
+        inputEmails.forEach(inputEmail => {
+            validateFunc(inputEmail, email);
+        });
+    }
+    
     validateFunc(inputName, name);
     
 
