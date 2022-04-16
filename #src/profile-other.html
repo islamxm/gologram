@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./html/head.html')
+</head>
+<body>
+    <div class="wrapper" id="lenta">
+        <div class="container">
+            @@include('./html/profile-header.html')
+        </div>
+
+        <main class="main">
+            <div class="profile">
+                @@include('./html/profile-self-header.html')
+
+                <div class="profile__card profile__card-self">
+                    
+                    <div class="profile__card_img">
+                        <picture>
+                            <source srcset="" type="image/webp">
+                            <img src="./img/profile/avatar.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="profile__card_body">
+                        <div class="profile__card_body_head">
+                            <div class="profile__card_body_head_item nickname">nickname</div>
+                            <button class="profile__card_body_head_item button_default button--send">Отправить сообщение</button>
+                            <button class="profile__card_body_head_item button_default button button-orange">Подписаться</button>
+                            
+                            <button class="profile__card_body_head_item button--more">
+                                <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.61538" cy="1.61538" r="1.61538" fill="black"/>
+                                    <circle cx="7.00015" cy="1.61538" r="1.61538" fill="black"/>
+                                    <circle cx="12.3844" cy="1.61538" r="1.61538" fill="black"/>
+                                    </svg>
+                                    
+                            </button>
+                        </div>
+                        <div class="profile__card_body_main-info">
+                            <div class="info-primary">Александра</div>
+                            <div class="info-secondary">Визажист</div>
+                        </div>
+                        <div class="profile__card_body_status">
+                            <button class="disabled">+ Установить статус</button>
+                        </div>
+                        <div class="profile__card_body_ex-info">
+                            <a href="#">freemind.ru</a>
+                        </div>
+                        <div class="profile__card_body_values">
+                            <div class="value value-posts">
+                                <div class="value__item">153</div>
+                                <div class="value__name">публикации</div>
+                            </div>
+                            <div class="value value-followers">
+                                <div class="value__item">1450</div>
+                                <div class="value__name">подписчиков</div>
+                            </div>
+                            <div class="value value-follows">
+                                <div class="value__item">208</div>
+                                <div class="value__name">подписки</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile__card-mobile">
+                    <div class="profile__card-mobile_main">
+                        <div class="profile__card-mobile_main_img">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/profile/avatar.png" alt="">
+                            </picture>
+                            <button class="profile__card-mobile_main_img_btn">
+                                <img src="./img/icons/add.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="profile__card-mobile_main_body">
+                            <div class="profile__card-mobile_main_body_descr">
+                                Визажист <br>
+                                Стаж 10 лет
+                            </div>
+                            <div class="profile__card-mobile_main_body_ex">
+                                <a href="#">freemind.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__card-mobile_values">
+                        <div class="profile__card-mobile_values_item">
+                            <div class="value">153</div>
+                            <div class="name">Публикации</div>
+                        </div>
+                        <div class="profile__card-mobile_values_item">
+                            <div class="value">1450</div>
+                            <div class="name">Подписчиков</div>
+                        </div>
+                        <div class="profile__card-mobile_values_item">
+                            <div class="value">208</div>
+                            <div class="name">Подписки</div>
+                        </div>
+                    </div>
+                    <div class="profile__card-mobile_action">
+                        <button>Редактировать профиль</button>
+                    </div>
+                </div>
+
+                <div class="profile__storemenu">
+                    @@include('./html/components/stm.html')
+                </div>
+
+                <div class="profile__content">
+                    <!-- cnt profile self-->
+                    @@include('./html/components/cnt-profile-other.html')
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+    <div class="post-item modal-post iziModal" id="post1" data-izimodal-group="posts">
+        <div class="post-item__img">
+            <picture>
+                <source srcset="" type="image/webp">
+                <img src="./img/modal-post.png" alt="">
+            </picture>
+        </div>
+        <div class="post-item__body">
+            <div class="post-item__body_head">
+                <div class="post-item__body_head_main">
+                    <div class="img"></div>
+                    <div class="body">
+                        <div class="body__name">nickname</div>
+                        <div class="body__geo">Moscow</div>
+                    </div>
+                </div>
+                <div class="post-item__body_head_menu postSettingsOpen">
+                    <img src="./img/icons/post-menu.svg" alt="">
+                </div>
+            </div>
+            <div class="post-item__body_content">
+                <div class="post--body">
+                    <div class="post--body_img">
+                        <img src="./img/profile/avatar.png" alt="">
+                    </div>
+                    <div class="post--body_content">
+                        <span class="post--body_content_nick">nickname</span>
+                        <span class="post--body_content_text">
+                            Сочные яркие оттенки жизни
+                            Искусство оформления лица с помощью 
+                            декоративной косметики, красок, теней, кремов, 
+                            а также само такое оформление. Целью макияжа 
+                            является украшение, самовыражение, а также 
+                            камуфлирование существующих особенностей. 
+                            Макияж является разновидностью грима.
+                        </span><br><br>
+                        <span class="post--body_content_tags">
+                            #makeup #moscow #макияж
+                        </span>
+
+                        <div class="post--body_content_date">
+                            2 дня назад
+                        </div>
+                    </div>
+                </div>
+                <div class="post--comments">
+                    <div class="post--comments_item">
+                        <div class="post--comments_item_img">
+                            <img src="./img/profile/avatar.png" alt="">
+                        </div>
+                        <div class="post--comments_item_body">
+                            <div class="post--comments_item_body_main">
+                                <span class="post--comments_item_body_main-nick">dmit_rai</span>
+                                <span class="post--comments_item_body_main-text">Вау</span>
+                            </div>
+                            <div class="post--comments_item_body_ex">
+                                <div class="post--comments_item_body_ex-date">2 часа</div>
+                                <div class="post--comments_item_body_ex-value">Нравится: 1</div>
+                                <div class="post--comments_item_body_ex-answer">Ответить</div>
+                            </div>
+                        </div>
+                        <div class="post--comments_item_action">
+                            <button class="post--comments_item_action-like btn-like">
+                                <div class="none">
+                                    <img src="./img/icons/like-none.svg" alt="">
+                                </div>
+                                <div class="active">
+                                    <img src="./img/icons/like-active.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post--comments_item">
+                        <div class="post--comments_item_img">
+                            <img src="./img/profile/avatar.png" alt="">
+                        </div>
+                        <div class="post--comments_item_body">
+                            <div class="post--comments_item_body_main">
+                                <span class="post--comments_item_body_main-nick">dmit_rai</span>
+                                <span class="post--comments_item_body_main-text">Очень нравятся цвета 😍</span>
+                            </div>
+                            <div class="post--comments_item_body_ex">
+                                <div class="post--comments_item_body_ex-date">2 часа</div>
+                                <div class="post--comments_item_body_ex-value">Нравится: 1</div>
+                                <div class="post--comments_item_body_ex-answer">Ответить</div>
+                            </div>
+                        </div>
+                        <div class="post--comments_item_action">
+                            <button class="post--comments_item_action-like btn-like">
+                                <div class="none">
+                                    <img src="./img/icons/like-none.svg" alt="">
+                                </div>
+                                <div class="active">
+                                    <img src="./img/icons/like-active.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-item__body_action">
+                <div class="post-item__body_action-top">
+                    <div class="post-item__body_action-info">
+                        <div class="post-item__body_action-info_prev"></div>
+                        <div class="post-item__body_action-info_descr">
+                            Нравится <span>dmit_rai</span> и <span>еще 5</span>
+                        </div>
+                    </div>
+                    <div class="post-item__body_action-btns">
+                        <div class="post-item__body_action-btns_item btn-like active">
+                            <div class="none">
+                                <img src="./img/icons/like-none.svg" alt="">
+                            </div>
+                            <div class="active">
+                                <img src="./img/icons/like-active.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-comment">
+                            <div class="none">
+                                <img src="./img/icons/comment.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-repost">
+                            <div class="none">
+                                <img src="./img/icons/repost.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-save">
+                            <div class="none">
+                                <img src="./img/icons/save.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item__body_action-bottom">
+                    <button class="post-item__body_action-emj">
+                        <img src="./img/icons/emoji.svg" alt="">
+                    </button>
+                    <input type="text" class="post-item__body_action-input" placeholder="Добавить комментарий...">
+                    <button class="post-item__body_action-btn">
+                        Опубликовать
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+        <!-- post menu -->
+        
+    </div>
+    <div class="post-item modal-post iziModal" id="post2" data-izimodal-group="posts">
+        <div class="post-item__img">
+            <picture>
+                <source srcset="" type="image/webp">
+                <img src="./img/modal-post.png" alt="">
+            </picture>
+        </div>
+        <div class="post-item__body">
+            <div class="post-item__body_head">
+                <div class="post-item__body_head_main">
+                    <div class="img"></div>
+                    <div class="body">
+                        <div class="body__name">nickname</div>
+                        <div class="body__geo">Moscow</div>
+                    </div>
+                </div>
+                <div class="post-item__body_head_menu postSettingsOpen">
+                    <img src="./img/icons/post-menu.svg" alt="">
+                </div>
+            </div>
+            <div class="post-item__body_content">
+                <div class="post--body">
+                    <div class="post--body_img">
+                        <img src="./img/profile/avatar.png" alt="">
+                    </div>
+                    <div class="post--body_content">
+                        <span class="post--body_content_nick">nickname</span>
+                        <span class="post--body_content_text">
+                            Сочные яркие оттенки жизни
+                            Искусство оформления лица с помощью 
+                            декоративной косметики, красок, теней, кремов, 
+                            а также само такое оформление. Целью макияжа 
+                            является украшение, самовыражение, а также 
+                            камуфлирование существующих особенностей. 
+                            Макияж является разновидностью грима.
+                        </span><br><br>
+                        <span class="post--body_content_tags">
+                            #makeup #moscow #макияж
+                        </span>
+
+                        <div class="post--body_content_date">
+                            2 дня назад
+                        </div>
+                    </div>
+                </div>
+                <div class="post--comments">
+                    <div class="post--comments_item">
+                        <div class="post--comments_item_img">
+                            <img src="./img/profile/avatar.png" alt="">
+                        </div>
+                        <div class="post--comments_item_body">
+                            <div class="post--comments_item_body_main">
+                                <span class="post--comments_item_body_main-nick">dmit_rai</span>
+                                <span class="post--comments_item_body_main-text">Вау</span>
+                            </div>
+                            <div class="post--comments_item_body_ex">
+                                <div class="post--comments_item_body_ex-date">2 часа</div>
+                                <div class="post--comments_item_body_ex-value">Нравится: 1</div>
+                                <div class="post--comments_item_body_ex-answer">Ответить</div>
+                            </div>
+                        </div>
+                        <div class="post--comments_item_action">
+                            <button class="post--comments_item_action-like btn-like">
+                                <div class="none">
+                                    <img src="./img/icons/like-none.svg" alt="">
+                                </div>
+                                <div class="active">
+                                    <img src="./img/icons/like-active.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post--comments_item">
+                        <div class="post--comments_item_img">
+                            <img src="./img/profile/avatar.png" alt="">
+                        </div>
+                        <div class="post--comments_item_body">
+                            <div class="post--comments_item_body_main">
+                                <span class="post--comments_item_body_main-nick">dmit_rai</span>
+                                <span class="post--comments_item_body_main-text">Очень нравятся цвета 😍</span>
+                            </div>
+                            <div class="post--comments_item_body_ex">
+                                <div class="post--comments_item_body_ex-date">2 часа</div>
+                                <div class="post--comments_item_body_ex-value">Нравится: 1</div>
+                                <div class="post--comments_item_body_ex-answer">Ответить</div>
+                            </div>
+                        </div>
+                        <div class="post--comments_item_action">
+                            <button class="post--comments_item_action-like btn-like">
+                                <div class="none">
+                                    <img src="./img/icons/like-none.svg" alt="">
+                                </div>
+                                <div class="active">
+                                    <img src="./img/icons/like-active.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-item__body_action">
+                <div class="post-item__body_action-top">
+                    <div class="post-item__body_action-info">
+                        <div class="post-item__body_action-info_prev"></div>
+                        <div class="post-item__body_action-info_descr">
+                            Нравится <span>dmit_rai</span> и <span>еще 5</span>
+                        </div>
+                    </div>
+                    <div class="post-item__body_action-btns">
+                        <div class="post-item__body_action-btns_item btn-like active">
+                            <div class="none">
+                                <img src="./img/icons/like-none.svg" alt="">
+                            </div>
+                            <div class="active">
+                                <img src="./img/icons/like-active.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-comment">
+                            <div class="none">
+                                <img src="./img/icons/comment.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-repost">
+                            <div class="none">
+                                <img src="./img/icons/repost.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-save">
+                            <div class="none">
+                                <img src="./img/icons/save.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item__body_action-bottom">
+                    <button class="post-item__body_action-emj">
+                        <img src="./img/icons/emoji.svg" alt="">
+                    </button>
+                    <input type="text" class="post-item__body_action-input" placeholder="Добавить комментарий...">
+                    <button class="post-item__body_action-btn">
+                        Опубликовать
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="post-item modal-post iziModal" id="post3" data-izimodal-group="posts">
+        <div class="post-item__img">
+            <picture>
+                <source srcset="" type="image/webp">
+                <img src="./img/modal-post.png" alt="">
+            </picture>
+        </div>
+        <div class="post-item__body">
+            <div class="post-item__body_head">
+                <div class="post-item__body_head_main">
+                    <div class="img"></div>
+                    <div class="body">
+                        <div class="body__name">nickname</div>
+                        <div class="body__geo">Moscow</div>
+                    </div>
+                </div>
+                <div class="post-item__body_head_menu postSettingsOpen">
+                    <img src="./img/icons/post-menu.svg" alt="">
+                </div>
+            </div>
+            <div class="post-item__body_content">
+                <div class="post--body">
+                    <div class="post--body_img">
+                        <img src="./img/profile/avatar.png" alt="">
+                    </div>
+                    <div class="post--body_content">
+                        <span class="post--body_content_nick">nickname</span>
+                        <span class="post--body_content_text">
+                            Сочные яркие оттенки жизни
+                            Искусство оформления лица с помощью 
+                            декоративной косметики, красок, теней, кремов, 
+                            а также само такое оформление. Целью макияжа 
+                            является украшение, самовыражение, а также 
+                            камуфлирование существующих особенностей. 
+                            Макияж является разновидностью грима.
+                        </span><br><br>
+                        <span class="post--body_content_tags">
+                            #makeup #moscow #макияж
+                        </span>
+
+                        <div class="post--body_content_date">
+                            2 дня назад
+                        </div>
+                    </div>
+                </div>
+                <div class="post--comments">
+                    <div class="post--comments_item">
+                        <div class="post--comments_item_img">
+                            <img src="./img/profile/avatar.png" alt="">
+                        </div>
+                        <div class="post--comments_item_body">
+                            <div class="post--comments_item_body_main">
+                                <span class="post--comments_item_body_main-nick">dmit_rai</span>
+                                <span class="post--comments_item_body_main-text">Вау</span>
+                            </div>
+                            <div class="post--comments_item_body_ex">
+                                <div class="post--comments_item_body_ex-date">2 часа</div>
+                                <div class="post--comments_item_body_ex-value">Нравится: 1</div>
+                                <div class="post--comments_item_body_ex-answer">Ответить</div>
+                            </div>
+                        </div>
+                        <div class="post--comments_item_action">
+                            <button class="post--comments_item_action-like btn-like">
+                                <div class="none">
+                                    <img src="./img/icons/like-none.svg" alt="">
+                                </div>
+                                <div class="active">
+                                    <img src="./img/icons/like-active.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post--comments_item">
+                        <div class="post--comments_item_img">
+                            <img src="./img/profile/avatar.png" alt="">
+                        </div>
+                        <div class="post--comments_item_body">
+                            <div class="post--comments_item_body_main">
+                                <span class="post--comments_item_body_main-nick">dmit_rai</span>
+                                <span class="post--comments_item_body_main-text">Очень нравятся цвета 😍</span>
+                            </div>
+                            <div class="post--comments_item_body_ex">
+                                <div class="post--comments_item_body_ex-date">2 часа</div>
+                                <div class="post--comments_item_body_ex-value">Нравится: 1</div>
+                                <div class="post--comments_item_body_ex-answer">Ответить</div>
+                            </div>
+                        </div>
+                        <div class="post--comments_item_action">
+                            <button class="post--comments_item_action-like btn-like">
+                                <div class="none">
+                                    <img src="./img/icons/like-none.svg" alt="">
+                                </div>
+                                <div class="active">
+                                    <img src="./img/icons/like-active.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-item__body_action">
+                <div class="post-item__body_action-top">
+                    <div class="post-item__body_action-info">
+                        <div class="post-item__body_action-info_prev"></div>
+                        <div class="post-item__body_action-info_descr">
+                            Нравится <span>dmit_rai</span> и <span>еще 5</span>
+                        </div>
+                    </div>
+                    <div class="post-item__body_action-btns">
+                        <div class="post-item__body_action-btns_item btn-like active">
+                            <div class="none">
+                                <img src="./img/icons/like-none.svg" alt="">
+                            </div>
+                            <div class="active">
+                                <img src="./img/icons/like-active.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-comment">
+                            <div class="none">
+                                <img src="./img/icons/comment.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-repost">
+                            <div class="none">
+                                <img src="./img/icons/repost.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-save">
+                            <div class="none">
+                                <img src="./img/icons/save.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item__body_action-bottom">
+                    <button class="post-item__body_action-emj">
+                        <img src="./img/icons/emoji.svg" alt="">
+                    </button>
+                    <input type="text" class="post-item__body_action-input" placeholder="Добавить комментарий...">
+                    <button class="post-item__body_action-btn">
+                        Опубликовать
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="post-item modal-post iziModal" id="post4" data-izimodal-group="posts">
+        <div class="post-item__img">
+            <picture>
+                <source srcset="" type="image/webp">
+                <img src="./img/modal-post.png" alt="">
+            </picture>
+        </div>
+        <div class="post-item__body">
+            <div class="post-item__body_head">
+                <div class="post-item__body_head_main">
+                    <div class="img"></div>
+                    <div class="body">
+                        <div class="body__name">nickname</div>
+                        <div class="body__geo">Moscow</div>
+                    </div>
+                </div>
+                <div class="post-item__body_head_menu postSettingsOpen">
+                    <img src="./img/icons/post-menu.svg" alt="">
+                </div>
+            </div>
+            <div class="post-item__body_content">
+                <div class="post--body">
+                    <div class="post--body_img">
+                        <img src="./img/profile/avatar.png" alt="">
+                    </div>
+                    <div class="post--body_content">
+                        <span class="post--body_content_nick">nickname</span>
+                        <span class="post--body_content_text">
+                            Сочные яркие оттенки жизни
+                            Искусство оформления лица с помощью 
+                            декоративной косметики, красок, теней, кремов, 
+                            а также само такое оформление. Целью макияжа 
+                            является украшение, самовыражение, а также 
+                            камуфлирование существующих особенностей. 
+                            Макияж является разновидностью грима.
+                        </span><br><br>
+                        <span class="post--body_content_tags">
+                            #makeup #moscow #макияж
+                        </span>
+
+                        <div class="post--body_content_date">
+                            2 дня назад
+                        </div>
+                    </div>
+                </div>
+                <div class="post--comments">
+                    <div class="post--comments_item">
+                        <div class="post--comments_item_img">
+                            <img src="./img/profile/avatar.png" alt="">
+                        </div>
+                        <div class="post--comments_item_body">
+                            <div class="post--comments_item_body_main">
+                                <span class="post--comments_item_body_main-nick">dmit_rai</span>
+                                <span class="post--comments_item_body_main-text">Вау</span>
+                            </div>
+                            <div class="post--comments_item_body_ex">
+                                <div class="post--comments_item_body_ex-date">2 часа</div>
+                                <div class="post--comments_item_body_ex-value">Нравится: 1</div>
+                                <div class="post--comments_item_body_ex-answer">Ответить</div>
+                            </div>
+                        </div>
+                        <div class="post--comments_item_action">
+                            <button class="post--comments_item_action-like btn-like">
+                                <div class="none">
+                                    <img src="./img/icons/like-none.svg" alt="">
+                                </div>
+                                <div class="active">
+                                    <img src="./img/icons/like-active.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post--comments_item">
+                        <div class="post--comments_item_img">
+                            <img src="./img/profile/avatar.png" alt="">
+                        </div>
+                        <div class="post--comments_item_body">
+                            <div class="post--comments_item_body_main">
+                                <span class="post--comments_item_body_main-nick">dmit_rai</span>
+                                <span class="post--comments_item_body_main-text">Очень нравятся цвета 😍</span>
+                            </div>
+                            <div class="post--comments_item_body_ex">
+                                <div class="post--comments_item_body_ex-date">2 часа</div>
+                                <div class="post--comments_item_body_ex-value">Нравится: 1</div>
+                                <div class="post--comments_item_body_ex-answer">Ответить</div>
+                            </div>
+                        </div>
+                        <div class="post--comments_item_action">
+                            <button class="post--comments_item_action-like btn-like">
+                                <div class="none">
+                                    <img src="./img/icons/like-none.svg" alt="">
+                                </div>
+                                <div class="active">
+                                    <img src="./img/icons/like-active.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-item__body_action">
+                <div class="post-item__body_action-top">
+                    <div class="post-item__body_action-info">
+                        <div class="post-item__body_action-info_prev"></div>
+                        <div class="post-item__body_action-info_descr">
+                            Нравится <span>dmit_rai</span> и <span>еще 5</span>
+                        </div>
+                    </div>
+                    <div class="post-item__body_action-btns">
+                        <div class="post-item__body_action-btns_item btn-like active">
+                            <div class="none">
+                                <img src="./img/icons/like-none.svg" alt="">
+                            </div>
+                            <div class="active">
+                                <img src="./img/icons/like-active.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-comment">
+                            <div class="none">
+                                <img src="./img/icons/comment.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-repost">
+                            <div class="none">
+                                <img src="./img/icons/repost.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-item__body_action-btns_item btn-save">
+                            <div class="none">
+                                <img src="./img/icons/save.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item__body_action-bottom">
+                    <button class="post-item__body_action-emj">
+                        <img src="./img/icons/emoji.svg" alt="">
+                    </button>
+                    <input type="text" class="post-item__body_action-input" placeholder="Добавить комментарий...">
+                    <button class="post-item__body_action-btn">
+                        Опубликовать
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="post-settings">
+        <div class="post-settings__in">
+            <ul class="post-settings__list">
+                <li class="post-settings__list_item post-settings__list_item--delete">Удалить</li>
+                <li class="post-settings__list_item">Перейти к публикации</li>
+                <li class="post-settings__list_item">Отмеченные аккаунты</li>
+                <li class="post-settings__list_item">Поделиться...</li>
+                <li class="post-settings__list_item">Копировать ссылку</li>
+                <li class="post-settings__list_item">Вставить на сайт</li>
+                <li class="post-settings__list_item postSettingsClose">Отмена</li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- profile menu -->
+    @@include('./html/profile-menu.html')
+
+    <!-- profile create -->
+    @@include('./html/create-menu.html')
+
+    <!-- profile mobnav -->
+    @@include('./html/mobnav.html')
+    
+
+    <!-- SCRIPTS -->
+    @@include('./html/scripts.html')
+</body>
+</html>

@@ -26,6 +26,10 @@
             overflow: hidden;
             margin-right: 5%;
             flex: 0 0 auto;
+            padding: 5px;
+            background: linear-gradient(180deg, #FFC31A 0%, #FF881A 100%);
+
+
 
             img {
                 width: 100%;
@@ -66,15 +70,34 @@
                     white-space: nowrap;
                 }
 
-                .button_default.button--edit {
+                .button_default {
                     padding: 7px 40px;
                     font-size: 18px;
                     line-height: 21px;
-                    border: 1px solid #1D2266;
-                    border-radius: 5px;
+                    border: 1px solid;
+                    border-radius: 8px;
+                }
+
+                .button_default.button--send {
+                    border-color: #E5E5E5;
+                    font-weight: 600;
+                }
+
+                .button_default.button--edit {
+                    border-color: #1D2266;
                 }
 
                 .button--settings {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .button--more {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 100%;
+                    border: 1px solid #000;
+                    flex: 0 0 auto;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -166,7 +189,7 @@
 
 
 
-@media (max-width: 850px) {
+@media (max-width: 1020px) {
 
     #profile {
 
