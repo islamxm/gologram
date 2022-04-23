@@ -301,15 +301,28 @@
                 margin-bottom: 30px;
                 width: 100%;
 
-                button {
-                    padding: 6px 50px;
-                    font-size: 14px;
-                    line-height: normal;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid #1D2266;
-                    border-radius: 5px;
+                &_btn {
+                    // padding: 6px 50px;
+                    // font-size: 14px;
+                    // line-height: normal;
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    // border: 1px solid #1D2266;
+                    // border-radius: 5px;
+                    border: 1px solid 
+                    #E5E5E5;
+                    max-width: 400px;
+
+                    margin: 0 2.5px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
             }
         }
@@ -340,6 +353,17 @@
         &__storemenu {
             padding: 0 2%;
             margin-bottom: 0px;
+        }
+
+
+        &__card-mobile {
+
+            &_action {
+                &_btn {
+                    font-size: 12px !important;
+                    line-height: 16px;
+                }
+            }
         }
     }
 }
