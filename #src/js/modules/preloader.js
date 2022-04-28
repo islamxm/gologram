@@ -6,7 +6,7 @@ export const preloader = () => {
         window.addEventListener('load', () => {
             setTimeout(() => {
                 el.classList.add('hide');
-                wrapper.classList.add('loaded');
+                // wrapper.classList.add('loaded');
             }, 3000);
         })
     }
