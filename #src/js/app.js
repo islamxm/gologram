@@ -11,11 +11,11 @@ import { stmSlider } from './modules/stmSlider.js';
 import { validation } from './modules/validation.js';
 
 
-
+preloader();
 document.addEventListener('DOMContentLoaded', () => {
     flsFuncs.isWebp();
 
-    preloader();
+    
     authSlider();
     stmSlider();
     modalScript();
