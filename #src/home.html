@@ -7,8 +7,12 @@
             @@include('./html/profile-header.html')
         </div>
 
+        
+
         <main class="main">
             <div class="home">
+                @@include('./html/home-header.html')
+                <!-- @@include('./html/profile-self-header.html') -->
                 <div class="container">
                     <div class="home__in">
                         <!-- home main part -->
@@ -385,6 +389,17 @@
             </div>
         </main>
     </div>
-    <script src="./js/app.min.js"></script>
+    <!-- profile menu -->
+    @@include('./html/profile-menu.html')
+
+    <!-- profile create -->
+    @@include('./html/create-menu.html')
+
+    <!-- profile mobnav -->
+    @@include('./html/mobnav.html')
+    
+
+    <!-- SCRIPTS -->
+    @@include('./html/scripts.html')
 </body>
 </html>
