@@ -722,7 +722,6 @@ body {
 .wrapper {
   height: 100%;
   width: 100%;
-  display: none;
 }
 
 .wrapper.loaded {
@@ -1084,6 +1083,9 @@ body {
     display: none;
   }
 
+  .profile {
+    padding-bottom: 70px;
+  }
   .profile__card {
     display: none;
   }
@@ -1187,6 +1189,7 @@ body {
 @media (max-width: 550px) {
   .profile {
     padding: 0;
+    padding-bottom: 70px;
   }
   .profile__storemenu {
     padding: 0 2%;
@@ -1917,6 +1920,11 @@ body {
   }
   .home__aside {
     display: none;
+  }
+}
+@media (max-width: 1020px) {
+  .home {
+    padding-bottom: 25px;
   }
 }
 @media (max-width: 600px) {
