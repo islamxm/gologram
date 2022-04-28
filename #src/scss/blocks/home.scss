@@ -408,6 +408,8 @@
 
                 &_item {
                     border-radius: 0;
+                    border-left: none;
+                    border-right: none;
 
                     .post-item__body_action {
                         display: none;

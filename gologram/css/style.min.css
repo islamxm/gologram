@@ -1931,6 +1931,8 @@ body {
   }
   .home__main_body_item {
     border-radius: 0;
+    border-left: none;
+    border-right: none;
   }
   .home__main_body_item .post-item__body_action {
     display: none;
